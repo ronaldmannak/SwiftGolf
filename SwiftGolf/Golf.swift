@@ -11,7 +11,11 @@ import Foundation
 class Golf {
     
     class func hole1(i: Int) -> Int {
-        // fill me in
+        var f = 1
+        for j in 1 ... i {
+            f *= j
+        }
+        return f
     }
     
     class func hole2() {
