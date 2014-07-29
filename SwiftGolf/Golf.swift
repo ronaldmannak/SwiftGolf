@@ -9,7 +9,7 @@
 import Foundation
 
 class Golf {
-    
+
     class func hole1(i: Int) -> Int {
         var f = 1
         for j in 1 ... i {
@@ -18,19 +18,24 @@ class Golf {
         return f
     }
     
-    class func hole2() {
+    class func hole2() -> [String] {
+
     }
     
-    class func hole3() {
+    class func hole3(i: Int) -> Int {
+        
     }
     
-    class func hole4() {
+    class func hole4(i:Int) -> [String] {
+
     }
     
-    class func hole5() {
+    class func hole5(i:Int) -> [Int] {
+        
     }
     
-    class func hole6() {
+    class func hole6(s:String) -> String {
+
     }
     
     class func hole7() {
