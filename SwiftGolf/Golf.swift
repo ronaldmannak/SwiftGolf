@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Dollar
 
 class Golf {
 
@@ -32,7 +31,21 @@ class Golf {
     }
     
     class func hole4(i:Int) -> [String] {
-        return ["placeholder"]
+        
+        var a = [String]()
+        for j in 1 ... i {
+            if j % 15 == 0 {
+                a.append("fizzbuzz")
+            } else if j % 3 == 0 {
+                a.append("fizz")
+            } else if j % 5 == 0 {
+                a.append("buzz")
+            } else {
+                a.append(String(j))
+            }
+        }
+        println("FizzBuzz: \(a)")
+        return a
     }
     
     class func hole5(i:Int) -> [Int] {

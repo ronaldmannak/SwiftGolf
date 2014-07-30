@@ -40,21 +40,21 @@ class SwiftGolfSpec: QuickSpec {
             }
         }
         
-//        describe("hole4") {
-//            it("plays fizzbuzz to 3, where multiples of 3 are 'fizz'") {
-//                expect(Golf.hole4(3)).to(equal(["1","2","fizz"]))
-//            }
-//            it("plays fizzbuzz to 5, where multiples of 5 are 'buzz'") {
-//                expect(Golf.hole4(5)).to(equal(["1","2","fizz","4","buzz"]))
-//            }
-//            it("plays fizzbuzz to 10") {
-//                expect(Golf.hole4(10)).to(equal(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz"]))
-//            }
-//            it("plays fizzbuzz to 20") {
-//                expect(Golf.hole4(20)).to(equal(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizzbuzz","16","17","fizz","19","buzz"]))
-//            }
-//        }
-//        
+        describe("hole4") {
+            it("plays fizzbuzz to 3, where multiples of 3 are 'fizz'") {
+                expect(Golf.hole4(3)).to(equal(["1","2","fizz"]))
+            }
+            it("plays fizzbuzz to 5, where multiples of 5 are 'buzz'") {
+                expect(Golf.hole4(5)).to(equal(["1","2","fizz","4","buzz"]))
+            }
+            it("plays fizzbuzz to 10") {
+                expect(Golf.hole4(10)).to(equal(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz"]))
+            }
+            it("plays fizzbuzz to 20") {
+                expect(Golf.hole4(20)).to(equal(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizzbuzz","16","17","fizz","19","buzz"]))
+            }
+        }
+//
 //        describe("hole5") {
 //            it("calculates the first n fibonacci numbers ") {
 //                expect(Golf.hole5(5)).to(equal([1,1,2,3,5]))
