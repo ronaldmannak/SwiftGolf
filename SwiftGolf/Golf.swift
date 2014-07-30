@@ -17,12 +17,18 @@ class Golf {
     
     class func hole2() -> [String] {
         
-        
         return ["placeholder"]
     }
     
     class func hole3(i: Int) -> Int {
-        return 42
+        
+        var j = i
+        var r = 1
+        while (j > 1) {
+            r *= j--
+        }
+            
+        return r
     }
     
     class func hole4(i:Int) -> [String] {
