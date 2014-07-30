@@ -8,6 +8,17 @@
 
 import Foundation
 
+extension String {
+    subscript (r: Range<Int>) -> String {
+        get {
+            let startIndex = advance(self.startIndex, r.startIndex)
+            let endIndex = advance(startIndex, r.endIndex - r.startIndex)
+            
+            return self[Range(start: startIndex, end: endIndex)]
+        }
+    }
+}
+
 class Golf {
 
     class func hole1(a: [Int]) -> Int {
@@ -62,7 +73,14 @@ class Golf {
     }
     
     class func hole6(s:String) -> String {
-        return "placeholder"
+        
+        if (countElements(s) <= 10) {
+            return s
+        } else {
+            var t = s[0 ... 6]
+            t += "..."
+            return t
+        }
     }
     
     class func hole7(s:String, p:String) -> Int {
