@@ -54,15 +54,15 @@ class SwiftGolfSpec: QuickSpec {
                 expect(Golf.hole4(20)).to(equal(["1","2","fizz","4","buzz","fizz","7","8","fizz","buzz","11","fizz","13","14","fizzbuzz","16","17","fizz","19","buzz"]))
             }
         }
+
+        describe("hole5") {
+            it("calculates the first n fibonacci numbers ") {
+                expect(Golf.hole5(5)).to(equal([1,1,2,3,5]))
+                expect(Golf.hole5(9)).to(equal([1,1,2,3,5,8,13,21,34]))
+                expect(Golf.hole5(15)).to(equal([1,1,2,3,5,8,13,21,34,55,89,144,233,377,610]))
+            }
+        }
 //
-//        describe("hole5") {
-//            it("calculates the first n fibonacci numbers ") {
-//                expect(Golf.hole5(5)).to(equal([1,1,2,3,5]))
-//                expect(Golf.hole5(9)).to(equal([1,1,2,3,5,8,13,21,34]))
-//                expect(Golf.hole5(15)).to(equal([1,1,2,3,5,8,13,21,34,55,89,144,233,377,610]))
-//            }
-//        }
-//        
 //        describe("hole6") {
 //            it("truncates words of >10 characters to exactly 10 characters") {
 //                expect(countElements(Golf.hole6("triangulation"))).to(equal(10))

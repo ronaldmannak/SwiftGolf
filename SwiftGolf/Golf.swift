@@ -35,13 +35,13 @@ class Golf {
         var a = [String]()
         for j in 1 ... i {
             if j % 15 == 0 {
-                a.append("fizzbuzz")
+                a += "fizzbuzz"
             } else if j % 3 == 0 {
-                a.append("fizz")
+                a += "fizz"
             } else if j % 5 == 0 {
-                a.append("buzz")
+                a += "buzz"
             } else {
-                a.append(String(j))
+                a += String(j)
             }
         }
         println("FizzBuzz: \(a)")
@@ -49,7 +49,16 @@ class Golf {
     }
     
     class func hole5(i:Int) -> [Int] {
-        return [42]
+        
+        var a = [Int]()
+        for j in 0 ..< i {
+            if j == 0 || j == 1 {
+                a += 1
+            } else {
+                a += a[a.count-1] + a[a.count-2]
+            }
+        }
+        return a
     }
     
     class func hole6(s:String) -> String {
