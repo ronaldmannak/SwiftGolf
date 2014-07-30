@@ -7,62 +7,46 @@
 //
 
 import Foundation
+import Dollar
 
 class Golf {
 
-//    class func hole1(i: Int) -> Int {
-//        var f = 1
-//        for j in 1 ... i {
-//            f *= j
-//        }
-//        return f
-//    }
-    
     class func hole1(a: [Int]) -> Int {
-        var j = 1
-        for i in a {
-            j *= i
-        }
-        return j
+        return a.reduce(1) { $0 * $1 }
     }
     
     class func hole2() -> [String] {
-        var u = 65 // A in Unicode
-        var a:[String] = Array()
-        var c:Character = "A"
-        while (c != "Z") {
-            let s = "\u\(u)}"
-            let c: Character = s
-            a.append(c)
-
-        }
         
-        return a
+        
+        return ["placeholder"]
     }
     
     class func hole3(i: Int) -> Int {
-        return 0
+        return 42
     }
     
     class func hole4(i:Int) -> [String] {
-        return [""]
+        return ["placeholder"]
     }
     
     class func hole5(i:Int) -> [Int] {
-        return [0]
+        return [42]
     }
     
     class func hole6(s:String) -> String {
-        return ""
+        return "placeholder"
     }
     
-    class func hole7() {
+    class func hole7(s:String, p:String) -> Int {
+        return 42
     }
     
-    class func hole8() {
+    class func hole8() -> String {
+        return "WOOOOOOOOOOOOOOOOOOOOOO!"
     }
     
-    class func hole9() {
+    class func hole9(a:[Int]) -> [[Int]] {
+        return [[42]]
     }
    
 }
